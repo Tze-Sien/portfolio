@@ -1,0 +1,117 @@
+$blue : #1F2438
+$gold : #C3AE7C
+$grey : #EFEFEF
+
+.section
+    height: auto
+    margin-top: -0.4rem
+    color: $gold
+    text-align: center
+    padding: 5rem 0
+
+    & h2
+        font-size: 5rem
+        font-weight: 700
+        margin-bottom: 5rem
+
+    & .scroll-bar
+        margin-bottom: 5rem
+        width: 100%
+        height: auto
+        white-space: nowrap
+        overflow: auto
+        padding-bottom: 2rem
+
+        & .scroll-item
+            width: 40rem
+            background: white
+            height: 100%
+            display: inline-block
+            margin-right: 5rem
+            border-radius: 1rem
+
+        &::-webkit-scrollbar 
+            width: auto
+            background: $blue
+
+        
+        &::-webkit-scrollbar-track 
+            border-radius: 5rem
+
+        
+        &::-webkit-scrollbar-thumb 
+            background-color: $gold
+            outline: 1px solid slategrey
+            border-radius: 5rem
+
+    & .card-section
+        width: 100%
+        flex-wrap: wrap
+        justify-content: space-evenly
+
+        & .card
+            background: white
+            height: 50rem
+            margin-bottom: 6rem
+            border-radius: 2rem
+        
+
+.contact
+    padding: 0
+    padding-top: 10rem
+    
+    & .form
+        background: white
+        padding: 5rem 0
+
+        & i
+            font-size: 5rem
+            padding: 0 2rem
+            margin-bottom: 2rem
+            color: $blue
+            transition: all 0.5s ease
+
+            &:hover
+                color: $gold
+
+        & p
+            font-size: 2rem
+            margin-bottom: 2rem
+
+        & input
+            padding: 1.5rem
+            font-size: 2rem
+            border-radius: 10rem
+            width: 100%
+            margin-bottom: 2rem
+            border: solid 1px $blue
+
+            &:focus
+                outline: none
+
+        & textarea
+            padding: 1.5rem
+            font-size: 2rem
+            border-radius: 2rem
+            width: 100%
+            margin-bottom: 2rem
+
+            &:focus
+                outline: none
+
+
+
+.section-dark
+    background: $blue
+    padding-top: 8rem
+
+.section-light
+    background: transparent
+
+#findings
+    & h2
+        padding-top: 10rem
+
+
+
+

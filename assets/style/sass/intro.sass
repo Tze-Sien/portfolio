@@ -1,0 +1,70 @@
+$blue : #1F2438
+$gold : #C3AE7C
+$grey : #EFEFEF
+
+.intro
+    height: 83vh
+    color: $gold
+
+    & .intro__text
+        width: 100%
+
+        & .intro-upper
+            display: grid
+            grid-template-columns: max-content 1fr
+            width: 100%
+            
+            & h1
+                font-size: 7rem
+                line-height: 6.5rem
+
+            & .border-btm
+                border-bottom: solid 0.3em $gold
+                width: 100%
+
+        & .intro-lower
+            margin-top: 2rem
+
+            & h5 
+                font-size: 3rem
+                font-weight: 700
+                line-height: 4rem
+
+            & span 
+                font-size: 3rem
+                border-bottom: 0.1em solid $blue
+                color: $blue
+
+
+@media screen and ( max-width: 780px )
+
+    .small-none
+        display: none !important
+
+    .intro-upper
+        display: grid
+        grid-template-columns:1fr
+        width: 100%
+            
+        & h1
+            font-size: 5rem !important
+            line-height: 6.5rem
+
+    .intro-lower
+
+        & h5 
+            font-size:2rem !important
+            font-weight: 700
+            line-height: 2.8rem !important
+
+        span 
+            font-size: 2rem !important
+            border-bottom: 0.1em solid $blue
+            color: $blue
+
+    .section 
+        h2
+            font-size: 3rem !important
+            font-weight: 700
+
+    
