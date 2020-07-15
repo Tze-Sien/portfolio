@@ -10,7 +10,20 @@
     <link rel="stylesheet" href="/assets/style/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
-<body>
+<body onload="toggleText()">
+    <div id="sidenav" class="sidenav d-flex small-block">
+        <div onclick="toggleNavbar()" class="overlay"></div>
+        <ul class="small-block sidenav-menu d-justify-content-center d-align-items-center text-center" >
+            <i onclick="toggleNavbar()" class="fas fa-times-circle"></i>
+            <div class="sidenav-item">
+                <a onclick="toggleNavbar()" href="#intro"><li>WHO AM I</li></a>
+                <a onclick="toggleNavbar()" href="#works"><li>WORKS</li></a>
+                <a onclick="toggleNavbar()" href="#findings"><li>FINDINGS</li></a>
+                <a onclick="toggleNavbar()" href="#experiments"><li>EXPERIMENTS</li></a>
+                <a onclick="toggleNavbar()" href="#contact"><li>CONTACT</li></a>
+            </div>
+        </ul>
+    </div>
     <nav>
         <div class="h-100 wrapper d-flex d-align-items-center d-space-between">
             <div class="logo">TZE SIEN</div>
@@ -22,6 +35,7 @@
                     <a href="#experiments"><li>EXPERIMENTS</li></a>
                     <a href="#contact"><li>CONTACT</li></a>
                 </ul>
+                <img onclick="toggleNavbar()" class="small-block sidenav-btn" src="/assets/img/Burger.svg">
             </div>
         </div>
     </nav>
@@ -36,7 +50,7 @@
                 <div class="intro-lower">
                     <h5>
                         A 
-                        <span>Web Developer</span> 
+                        <span class="typewriter"><h1 id="typewritter">Web Developer</h1 > </span> 
                         who passionate in turning ideas
                         into digital products that solve real life problems.
                     </h5>

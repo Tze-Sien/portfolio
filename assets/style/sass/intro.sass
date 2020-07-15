@@ -37,5 +37,27 @@ $grey : #EFEFEF
 
 
 
+.typewriter h1
+    text-align: center
+    display: inline-block
+    overflow: hidden
+    border-right: .15em solid $gold
+    white-space: nowrap
+    margin: 0 auto
+    animation: typing 1.5s steps(20, end) forwards,blink-caret 0.75s step-end infinite
+    animation-direction: alternate
 
+@keyframes typing 
+  from
+    width: 0
+  to 
+    width: max-width
+
+@keyframes blink-caret 
     
+    from,to 
+        border-color: transparent 
+    50% 
+        border-color: $gold
+
+

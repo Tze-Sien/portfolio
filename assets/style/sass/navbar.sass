@@ -9,7 +9,7 @@ nav
     height: 8rem
     background: $blue !important
     color: $gold
-    z-index: 9999
+    z-index: 555
 
     & .logo
         font-size: 2.5rem !important
@@ -21,5 +21,75 @@ nav
             font-size: 1rem
             line-height: 2.5rem
             margin-right: 1.5rem
+
+.sidenav-btn
+    width: 2rem
+    cursor: pointer
+
+.sidenav
+    position: fixed
+    top: 0
+    right: -100vw
+    opacity: 0
+    z-index: 888
+    width: 100vw
+    transition: 0.2s ease all
+
+    & .overlay
+        position: absolute
+        width: 100vw
+        height: 100vh
+        background: rgba(0,0,0,0.8)
+        z-index: 889
+        top: 0
+        left: 0
+        width: 100%
+        opacity: 0
+        transition: 5s ease all
+
+    & .sidenav-menu
+        height: 100vh
+        display: flex !important
+        width: 80vw
+        position: relative
+        top: 0
+        right: -100vw
+        margin-left: auto
+        background: $blue
+        z-index: 999
+        color: $gold
+        padding: 2rem
+        transition: 0.8s ease all
+
+        & i
+            font-size: 2rem
+            cursor: pointer
+            position: absolute
+            top: 2rem
+            left: 2rem
+
+            
+
+        & li
+            margin-bottom: 1.5rem
+            transition: all 0.25s ease
+
+            &:hover
+                font-size: 3rem
+
+.sidenav-display
+    right: 0
+    opacity: 1
+
+    & .overlay
+        display: block
+        opacity: 1
+        transition: 0.5s ease all
+
+    & .sidenav-menu
+        right: 0
+        transition: 0.5s ease all
+
+
 
     

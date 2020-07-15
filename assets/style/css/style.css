@@ -5,7 +5,7 @@ nav {
   height: 8rem;
   background: #1F2438 !important;
   color: #C3AE7C;
-  z-index: 9999;
+  z-index: 555;
 }
 nav .logo {
   font-size: 2.5rem !important;
@@ -18,6 +18,75 @@ nav ul li {
   font-size: 1rem;
   line-height: 2.5rem;
   margin-right: 1.5rem;
+}
+
+.sidenav-btn {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  opacity: 0;
+  z-index: 888;
+  width: 100vw;
+  transition: 0.2s ease all;
+}
+.sidenav .overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 889;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 5s ease all;
+}
+.sidenav .sidenav-menu {
+  height: 100vh;
+  display: flex !important;
+  width: 80vw;
+  position: relative;
+  top: 0;
+  right: -100vw;
+  margin-left: auto;
+  background: #1F2438;
+  z-index: 999;
+  color: #C3AE7C;
+  padding: 2rem;
+  transition: 0.8s ease all;
+}
+.sidenav .sidenav-menu i {
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.sidenav .sidenav-menu li {
+  margin-bottom: 1.5rem;
+  transition: all 0.25s ease;
+}
+.sidenav .sidenav-menu li:hover {
+  font-size: 3rem;
+}
+
+.sidenav-display {
+  right: 0;
+  opacity: 1;
+}
+.sidenav-display .overlay {
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease all;
+}
+.sidenav-display .sidenav-menu {
+  right: 0;
+  transition: 0.5s ease all;
 }
 
 .intro {
@@ -54,6 +123,33 @@ nav ul li {
   color: #1F2438;
 }
 
+.typewriter h1 {
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid #C3AE7C;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 1.5s steps(20, end) forwards, blink-caret 0.75s step-end infinite;
+  animation-direction: alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: max-width;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #C3AE7C;
+  }
+}
 .section {
   height: auto;
   margin-top: -0.4rem;
@@ -213,7 +309,7 @@ li {
 
 a {
   color: unset;
-  transition: 0.5s ease all;
+  transition: 0.25s ease all;
 }
 a:hover {
   color: white;
@@ -226,6 +322,10 @@ a:hover {
 
 .d-block {
   display: block;
+}
+
+.small-block {
+  display: none;
 }
 
 .d-justify-content-center {
@@ -303,6 +403,10 @@ a:hover {
 
   .form i {
     font-size: 3rem;
+  }
+
+  .small-block {
+    display: block !important;
   }
 }
 
